@@ -1,8 +1,9 @@
-[![](http://donatecoins.org/btc/1HeMeMU2qUFDRZpRQMJ2v27Dw3h3gShJ5b.svg)](http://donatecoins.org/btc/1HeMeMU2qUFDRZpRQMJ2v27Dw3h3gShJ5b)
-[![](https://travis-ci.org/dice89/proximityhash.svg?branch=master)](https://travis-ci.org/dice89/proximityhash)
-
 # ProximityPyHash: Geohashes in Proximity 
 
+[![](https://travis-ci.org/dice89/proximityhash.svg?branch=master)](https://travis-ci.org/dice89/proximityhash)
+[![Code Health](https://landscape.io/github/dice89/proximityhash/master/landscape.svg?style=flat)](https://landscape.io/github/dice89/proximityhash/master)
+[![PyPI version](https://badge.fury.io/py/proximitypyhash.svg)](https://badge.fury.io/py/proximitypyhash)
+[![PyPI](https://img.shields.io/pypi/pyversions/proximitypyhash.svg)](https://img.shields.io/pypi/pyversions/proximitypyhash.svg)
 
 This is a fork of ProximityHash which improved the setup and changed the dependcy towards caclulating geohash
 to pygeohash instead of geohash.
@@ -44,45 +45,39 @@ $ proximityhash -h
 ### Example
 
 ```
-$ proximityhash 48.858156 2.294776 1000 7
+$ proximitypyhash 48.858156 2.294776 1000 7
 ```
-![example  no raptor](https://raw.github.com/ashwin711/proximityhash/master/images/proximityhash.png)
+![](https://raw.github.com/ashwin711/proximityhash/master/images/proximityhash.png)
 
 ```
-$ proximityhash 48.858156 2.294776 2000 7 --georaptor true
+$ proximitypyhash 48.858156 2.294776 2000 7 --georaptor true
 ```
 
-![example raptor](https://raw.github.com/ashwin711/proximityhash/master/images/proximityhash_georaptor.png)
+![](https://raw.github.com/ashwin711/proximityhash/master/images/proximityhash_georaptor.png)
 
 ```
-$ proximityhash 48.858156 2.294776 2000 7 --georaptor true --minlevel 3 --maxlevel 6
+$ proximitypyhash 48.858156 2.294776 2000 7 --georaptor true --minlevel 3 --maxlevel 6
 ```
 
-![example different level raptor](https://raw.github.com/ashwin711/proximityhash/master/images/proximityhash_georaptor_limited.png)
+![](https://raw.github.com/ashwin711/proximityhash/master/images/proximityhash_georaptor_limited.png)
 
 
 ### In-Code Usage Example
 
 
-You can use the code also as a library in your application: ::
-```python
+You can use the code also as a library in your application: 
+```
 import proximitypyhash
-proximitypyhash.get_geohash_radius_approximation(latitude=12.0,
-                                                  longitude=77.0,
-                                                  radius=20.0,
-                                                  precision=8,
-                                                  georaptor_flag=False,
-                                                  minlevel=1,
-                                                  maxlevel=12)
+proximitypyhash.get_geohash_radius_approximation(latitude=12.0,longitude=77.0,radius=20.0,precision=8,georaptor_flag=False,minlevel=1,maxlevel=12)
 
 ```
    
 
 ## Installation
 
-To install proximitypyhash, simply: ::
+To install proximitypyhash, simply:
 ```
-$ pip install proximityhash
+$ pip install proximitypyhash
 ```
    
 
@@ -91,18 +86,18 @@ $ pip install proximityhash
 
 Install pyenv and pyenv virtualenv: 
 ```
-    brew install pyenv
-    brew install pyenv-virtualenv
+brew install pyenv
+brew install pyenv-virtualenv
 ```
 Create and activate the virtualenv: 
 ```
-    pyenv virtualenv proximitypyhash
-    pyenv activate proximitypyhash
-    python setup.py develop
+pyenv virtualenv proximitypyhash
+pyenv activate proximitypyhash
+python setup.py develop
 ```
 Run the tests 
 ```
-    python setup.py test
+python setup.py test
 ```
 License:
 --------
@@ -113,21 +108,20 @@ testing functionality with a more conscise setup.
 Licensed under the Apache License, Version 2.0. 
 
 ```
+Copyright 2017 Ashwin Nair <https://www.linkedin.com/in/nairashwin7>
+Copyright 2017 Alexander Müller <https://www.linkedin.com/in/alexander-m%C3%BCller-727315a7/>
 
-    Copyright 2017 Ashwin Nair <https://www.linkedin.com/in/nairashwin7>
-    Copyright 2017 Alexander Müller <https://www.linkedin.com/in/alexander-m%C3%BCller-727315a7/>
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+   http://www.apache.org/licenses/LICENSE-2.0
 
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 ```
 
 Contributors:
@@ -135,4 +129,4 @@ Contributors:
 
 - Ashwin Nair [https://github.com/ashwin711]
 - Arjun Menon [http://github.com/arjunmenon92]
-- (Alexander Müller)[https://github.com/dice89]
+- Alexander Müller[https://github.com/dice89]
