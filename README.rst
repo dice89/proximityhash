@@ -77,12 +77,34 @@ To install proximityhash, simply: ::
     $ pip install proximityhash
 
 
+Dev Setup using pyenv
+---------------------
+
+Install pyenv and pyenv virtualenv
+
+$ brew install pyenv
+$ brew install pyenv-virtualenv
+
+Create and activate the virtualenv
+
+$ pyenv virtualenv proximitypyhash
+$ pyenv activate proximitypyhash
+$ python setup.py develop
+
+Run the tests
+
+$ python setup.py test
+
 License:
 --------
+
+The code is orginally from Ashwin Nair, I just made some changes to it to make the setup smoother and added
+testing functionality with a more conscise setup.
 
 Licensed under the Apache License, Version 2.0. ::
 
     Copyright 2017 Ashwin Nair <https://www.linkedin.com/in/nairashwin7>
+    Copyright 2017 Alexander Müller <https://www.linkedin.com/in/alexander-m%C3%BCller-727315a7/>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -101,4 +123,5 @@ Contributors:
 -------------
 
 - Ashwin Nair [https://github.com/ashwin711]
-- Arjun Menon - [http://github.com/arjunmenon92]
+- Arjun Menon [http://github.com/arjunmenon92]
+- (Alexander Müller)[https://github.com/dice89]

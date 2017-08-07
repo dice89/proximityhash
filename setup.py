@@ -2,13 +2,13 @@ from distutils.core import setup
 import setuptools
 
 setup(
-  name = 'proximityhash',
-  py_modules = ['proximityhash'],
-  version = '1.0.1',
-  description = 'Geohashes in proximity',
+  name = 'proximitypyhash',
+  py_modules = ['proximitypyhash'],
+  version = '0.1',
+  description = 'Pygeohash in proximity',
   long_description = open('README.rst').read(),
-  author = 'Ashwin Nair',
-  author_email = 'ashwinnair.ua@gmail.com',
+  author = 'Ashwin Nair/Alexander Mueller',
+  author_email = 'alexander.mueller@gmail.com',
   license = "MIT",
   url = 'https://github.com/ashwin711/proximityhash',
   download_url = 'https://github.com/ashwin711/proximityhash/tarball/1.0.1',
@@ -22,11 +22,15 @@ setup(
     'Topic :: Software Development :: Libraries :: Python Modules',
     'Topic :: Utilities'
   ],
+  setup_requires=['pytest-runner'],
+  tests_require=[
+            'pytest',
+        ],
   install_requires = [
 	'clint',
 	'argparse',
     'georaptor>=2.0.3',
-    'Geohash'
+    'pygeohash==1.2.0'
   ],
   entry_points='''
 	[console_scripts]
