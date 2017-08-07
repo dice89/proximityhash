@@ -1,6 +1,9 @@
 .. image:: http://donatecoins.org/btc/1HeMeMU2qUFDRZpRQMJ2v27Dw3h3gShJ5b.svg
    :target: http://donatecoins.org/btc/1HeMeMU2qUFDRZpRQMJ2v27Dw3h3gShJ5b
 
+.. image:: https://travis-ci.org/dice89/proximityhash.svg?branch=master
+    :target: https://travis-ci.org/dice89/proximityhash.svg?branch=master
+
 ProximityHash: Geohashes in Proximity (with the option of compression using Georaptor_)
 =======================================================================================
 
@@ -67,6 +70,12 @@ $ proximityhash 48.858156 2.294776 2000 7 --georaptor true --minlevel 3 --maxlev
 .. image:: https://raw.github.com/ashwin711/proximityhash/master/images/proximityhash_georaptor_limited.png
    :width: 480
    :height: 320
+
+In-Code Usage Example
+---------------------
+
+
+
 
 
 Installation

@@ -28,7 +28,6 @@ def test_convert_to_latlon():
 def test_create_geohash():
     expected = 'tdnu20t9,tdnu20t8,tdnu20t3,tdnu20t2,tdnu20mz,tdnu20mx,tdnu20tc,tdnu20tb,tdnu20td,tdnu20tf'
     expected = expected.split(',')
-    output = proximityhash.create_geohash(12.0, 77.0, 20.0, 8, georaptor_flag=False, minlevel=1, maxlevel=12)
-    output = output.split(',')
+    output = proximityhash.get_geohash_radius_approximation(12.0, 77.0, 20.0, 8, georaptor_flag=False, minlevel=1, maxlevel=12)
 
     assert set(output) == set(expected)
