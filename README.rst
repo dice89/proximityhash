@@ -77,9 +77,7 @@ $ proximityhash 48.858156 2.294776 2000 7 --georaptor true --minlevel 3 --maxlev
 In-Code Usage Example
 ---------------------
 
-You can use the code also as a library in your application:
-
-::
+You can use the code also as a library in your application: ::
 
     import proximitypyhash
     proximitypyhash.get_geohash_radius_approximation(latitude=12.0,
@@ -101,20 +99,19 @@ To install proximitypyhash, simply: ::
 Dev Setup using pyenv
 ---------------------
 
-Install pyenv and pyenv virtualenv
+Install pyenv and pyenv virtualenv: ::
 
-$ brew install pyenv
-$ brew install pyenv-virtualenv
+    brew install pyenv
+    brew install pyenv-virtualenv
 
-Create and activate the virtualenv
+Create and activate the virtualenv: ::
 
-$ pyenv virtualenv proximitypyhash
-$ pyenv activate proximitypyhash
-$ python setup.py develop
+    pyenv virtualenv proximitypyhash
+    pyenv activate proximitypyhash
+    python setup.py develop
+Run the tests ::
 
-Run the tests
-
-$ python setup.py test
+    python setup.py test
 
 License:
 --------

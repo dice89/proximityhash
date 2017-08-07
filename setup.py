@@ -11,7 +11,7 @@ setup(
   author_email = 'alexander.mueller@gmail.com',
   license = "MIT",
   url = 'https://github.com/ashwin711/proximityhash',
-  download_url = 'https://github.com/ashwin711/proximityhash/tarball/1.0.1',
+  download_url = 'https://github.com/dice89/proximityhash/tarball/0.1',
   keywords = ['geohash', 'optimizer', 'compression', 'geo', 'latitude', 'longitude', 'coordinates', 'proximity', 'circle'],
   classifiers = [
     'Development Status :: 5 - Production/Stable',
