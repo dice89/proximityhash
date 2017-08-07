@@ -2,10 +2,13 @@
    :target: http://donatecoins.org/btc/1HeMeMU2qUFDRZpRQMJ2v27Dw3h3gShJ5b
 
 .. image:: https://travis-ci.org/dice89/proximityhash.svg?branch=master
-    :target: https://travis-ci.org/dice89/proximityhash.svg?branch=master
+    :target: https://travis-ci.org/dice89/proximityhash
 
-ProximityHash: Geohashes in Proximity (with the option of compression using Georaptor_)
-=======================================================================================
+ProximityPyHash: Geohashes in Proximity (with the option of compression using Georaptor_)
+=========================================================================================
+
+This is a fork of ProximityHash which improved the setup and changed the dependcy towards caclulating geohash
+to pygeohash instead of geohash.
 
 .. _GeoRaptor: https://github.com/ashwin711/georaptor
 
@@ -74,16 +77,25 @@ $ proximityhash 48.858156 2.294776 2000 7 --georaptor true --minlevel 3 --maxlev
 In-Code Usage Example
 ---------------------
 
+You can use the code also as a library in your application:
 
+::
 
-
+    import proximitypyhash
+    proximitypyhash.get_geohash_radius_approximation(latitude=12.0,
+                                                      longitude=77.0,
+                                                      radius=20.0,
+                                                      precision=8,
+                                                      georaptor_flag=False,
+                                                      minlevel=1,
+                                                      maxlevel=12)
 
 Installation
 ------------
 
-To install proximityhash, simply: ::
+To install proximitypyhash, simply: ::
 
-    $ pip install proximityhash
+   $ pip install proximityhash
 
 
 Dev Setup using pyenv
