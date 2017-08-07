@@ -4,7 +4,7 @@ ProximityPyHash: Geohashes in Proximity
 |image0| |Code Health| |PyPI version| |PyPI|
 
 This is a fork of ProximityHash which improved the setup and changed the
-dependcy towards caclulating geohash to pygeohash instead of geohash.
+dependency towards calculating geohash to pygeohash instead of geohash.
 
 Geohash is a geocoding system invented by Gustavo Niemeyer and placed
 into the public domain. It is a hierarchical spatial data structure
@@ -117,15 +117,15 @@ License:
 --------
 
 The code is orginally from Ashwin Nair, I just made some changes to it
-to make the setup smoother and added testing functionality with a more
-conscise setup.
+to make the setup smoother and added testing functionality with a better
+setup.
 
 Licensed under the Apache License, Version 2.0.
 
 ::
 
     Copyright 2017 Ashwin Nair <https://www.linkedin.com/in/nairashwin7>
-    Copyright 2017 Alexander Müller <https://www.linkedin.com/in/alexander-m%C3%BCller-727315a7/>
+    Copyright 2017 Alexander Mueller <https://www.linkedin.com/in/alexander-m%C3%BCller-727315a7/>
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -144,7 +144,7 @@ Contributors:
 
 -  Ashwin Nair [https://github.com/ashwin711]
 -  Arjun Menon [http://github.com/arjunmenon92]
--  Alexander Müller[https://github.com/dice89]
+-  Alexander Mueller[https://github.com/dice89]
 
 .. |image0| image:: https://travis-ci.org/dice89/proximityhash.svg?branch=master
    :target: https://travis-ci.org/dice89/proximityhash

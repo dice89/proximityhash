@@ -4,7 +4,7 @@ import setuptools
 setup(
   name = 'proximitypyhash',
   py_modules = ['proximitypyhash'],
-  version = '0.2',
+  version = '0.2.1',
   description = 'Pygeohash for proximity queries',
   long_description=open('README.rst').read(),
   author = 'Ashwin Nair/Alexander Mueller',
