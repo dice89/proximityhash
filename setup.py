@@ -4,14 +4,14 @@ import setuptools
 setup(
   name = 'proximitypyhash',
   py_modules = ['proximitypyhash'],
-  version = '0.1.1',
+  version = '0.2',
   description = 'Pygeohash for proximity queries',
   long_description=open('README.rst').read(),
   author = 'Ashwin Nair/Alexander Mueller',
   author_email = 'alexander.mueller@gmail.com',
   license = "MIT",
   url = 'https://github.com/dice89/proximityhash',
-  download_url = 'https://github.com/dice89/proximityhash/archive/0.1.tar.gz',
+  download_url = 'https://github.com/dice89/proximityhash/archive/0.2.tar.gz',
   keywords = ['geohash', 'optimizer', 'compression', 'geo', 'latitude', 'longitude', 'coordinates', 'proximity', 'circle'],
   classifiers = [
     'Development Status :: 5 - Production/Stable',
